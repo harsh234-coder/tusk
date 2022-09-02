@@ -1,0 +1,15 @@
+var li=document.querySelector('.list-group-item:nth-child(2)');
+li.style.backgroundColor="green";
+
+var li3=document.querySelector('.list-group-item:nth-child(3)');
+li3.style.display="none";
+
+var second=document.querySelectorAll('.list-group-item');
+second[1].style.color="green";
+
+var odd=document.querySelectorAll('.list-group-item:nth-child(odd)');
+
+for(i of odd){
+    i.style.backgroundColor="green";
+}
+
