@@ -1,0 +1,52 @@
+//parent nodes
+var items=document.querySelector("#items");
+items.parentNode.style.backgroundColor="grey";
+
+//parent elements
+var items=document.querySelector("#items");
+items.parentElement.style.backgroundColor="grey";
+
+//child nodes
+console.log(items.childNodes);
+
+//children
+items.children[1].style.backgroundColor="yellow";
+
+//first child - will include whitespaces, so try not to use this
+console.log(items.firstChild);
+
+//first element  child
+items.firstElementChild.style.backgroundColor="yellow";
+
+//last child - will include whitespaces, so try not to use this
+console.log(items.lastChild);
+
+//last element  child
+items.lastElementChild.style.backgroundColor="yellow";
+
+//next sibling - will include whitespaces, try to avoid using it
+console.log(items.nextSibling);
+
+//next element sibling
+items.nextElementSibling.style.backgroundColor-"yellow";
+
+//previous sibling - will include whitespaces, try to avoid using it
+console.log(items.previousSibling);
+
+//previous element sibling
+items.previousElementSibling.style.backgroundColor="yellow";
+
+//create element
+
+var newDiv=document.createElement('div');
+newDiv.className="new";
+newDiv.id="newi";
+
+var newDivText=document.createTextNode("Hello");
+newDiv.appendChild(newDivText);
+console.log(newDiv);
+
+var parent=document.querySelector('#main');
+var item=document.querySelector('#items');
+
+parent.insertBefore(newDiv,item);
